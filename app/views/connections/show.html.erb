@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @connection.user_id %>
+</p>
+
+<p>
+  <strong>Connection:</strong>
+  <%= @connection.connection_id %>
+</p>
+
+<p>
+  <strong>Connection type:</strong>
+  <%= @connection.connection_type %>
+</p>
+
+<%= link_to 'Edit', edit_connection_path(@connection) %> |
+<%= link_to 'Back', connections_path %>
